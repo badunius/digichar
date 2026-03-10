@@ -1,0 +1,48 @@
+import { List } from '$utils/table'
+
+const name_pres = new List([
+	'Äl',
+	'Ber',
+	'Dän',
+	'Eow',
+	'Fer',
+	'Gul',
+	'Jal',
+	'Ker',
+	'Lem',
+	'Myr',
+	'Nil',
+	'Od',
+	'Pen',
+	'Quèn',
+	'Ry',
+	'Sam',
+	'Tan',
+	'Vyn',
+	'Wil',
+	'Zo',
+])
+const name_post = new List([
+	'a',
+	'bért',
+	'ças',
+	'del',
+	'dwyn',
+	'ë',
+	'fi',
+	'gend',
+	'ill',
+	'ix',
+	'ja',
+	'mar',
+	'nyá',
+	'quist',
+	'rada',
+	'ren',
+	's',
+	'tén',
+	'væn',
+	'za',
+])
+
+export const randName = () => `${name_pres.roll()}${name_post.roll()}`

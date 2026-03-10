@@ -1,0 +1,75 @@
+:root {
+	font-weight: 700;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #333;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+html * {
+	box-sizing: border-box;
+}
+
+:root {
+	--unit: 16px;
+	--page: 640px;
+}
+
+@media screen and (max-width: 480px) {
+	:root {
+		--unit: 24px;
+		--page: 360px;
+	}
+}
+
+:root {
+	--half: calc(var(--unit) * 0.5);
+	--quart: calc(var(--unit) * 0.25);
+	--double: calc(var(--unit) * 2);
+
+	--color-text: rgba(255, 255, 255, 0.87);
+	--color-face: #333;
+}
+
+:root,
+button,
+input,
+textarea {
+	font-size: var(--unit);
+	font-family: 'Merriweather', serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.panel {
+	border-radius: 8px;
+	border: 1px outset #ccc3;
+	box-shadow: 0 2px 4px #000c;
+	user-select: none;
+	cursor: default;
+	background-color: #fff1;
+}
+
+.attr_will {
+	color: #69f;
+}
+.attr_skill {
+	color: #fc6;
+}
+.attr_might {
+	color: #f66;
+}

@@ -1,0 +1,12 @@
+{
+	"printWidth": 80,
+	"singleQuote": true,
+	"semi": false,
+	"trailingComma": "es5",
+	"jsxSingleQuote": false,
+	"svelteSortOrder": "scripts-markup-styles",
+	"svelteStrictMode": false,
+	"svelteAllowShorthand": true,
+	"useTabs": true,
+	"tabWidth": 2
+}
