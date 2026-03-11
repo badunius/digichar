@@ -17,6 +17,7 @@ const en = {
 	menu_header: 'Menu',
 	menu_edit_mode: 'Edit mode',
 	menu_re_roll: 'Reroll',
+	roll_clear: 'Clear history',
 }
 
 type Dict = typeof en
@@ -29,7 +30,7 @@ const ru: Dict = {
 	res_stamina: 'Выносливость',
 	res_health: 'Здоровье',
 	res_luck: 'Удача',
-	field_character_name: 'Имя вашего персонажа',
+	field_character_name: 'Имя твоего персонажа',
 	field_background: 'предыстория',
 	field_skills_and_bonds: 'навыки и связи',
 	field_inventory: 'инвентарь',
@@ -40,6 +41,7 @@ const ru: Dict = {
 	menu_header: 'Меню',
 	menu_edit_mode: 'Редактирование',
 	menu_re_roll: 'Переролить',
+	roll_clear: 'Очистить историю',
 }
 
 const loc = {

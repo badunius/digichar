@@ -1,13 +1,14 @@
 <script lang="ts">
 	import RollEntry from '$lib/comps/RollEntry.svelte'
 	import { diceRoller } from '$stores/dice.svelte'
+	import { intl } from '$stores/tr.svelte'
 
 	let last = $derived(diceRoller.history.length - 1)
 </script>
 
 <div class="roller-root">
 	{#if last >= 0}
-		<button onclick={() => diceRoller.clear()}>Clear history</button>
+		<button onclick={() => diceRoller.clear()}>{intl.tr('roll_clear')}</button>
 	{/if}
 
 	{#each diceRoller.history as _, index}
