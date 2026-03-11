@@ -41,7 +41,7 @@
 	}
 </script>
 
-<div class="box panel">
+<div class={`box panel ${label}`}>
 	<div class="level" class:editing>
 		{#if editing}
 			<input
@@ -109,6 +109,12 @@
 				font-weight: 700;
 				text-align: center;
 				cursor: pointer;
+				color: currentColor;
+				transition: background-color 0.25s;
+
+				&:hover {
+					background-color: #0001;
+				}
 			}
 
 			&.editing {
@@ -136,9 +142,9 @@
 		}
 
 		.upper {
-			color: #eb6;
+			color: #8e6;
 			border-radius: 50%;
-			background-color: #0001;
+			background-color: #0000;
 			border: 1px solid;
 			padding: 0;
 			margin: 0;
@@ -150,7 +156,7 @@
 				box-shadow 0.25s;
 
 			&:hover:not(.editing) {
-				background-color: #fff1;
+				background-color: #0001;
 				box-shadow: 0 0 8px;
 			}
 
