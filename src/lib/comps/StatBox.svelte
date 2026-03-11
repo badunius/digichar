@@ -3,6 +3,7 @@
 	import PlusIcon from '$lib/icons/PlusIcon.svelte'
 	import { diceRoller } from '$stores/dice.svelte'
 	import { intl } from '$stores/tr.svelte'
+	import Title from './Title.svelte'
 
 	type Props = {
 		label: string
@@ -56,7 +57,9 @@
 		{/if}
 	</div>
 	<div class="label">
-		{tr(label)}
+		<div class="text">
+			{tr(label)}
+		</div>
 		<div class="xp">
 			{xp} / 12
 		</div>
@@ -127,12 +130,15 @@
 		.label {
 			font-size: 24px;
 			font-weight: 500;
-			flex: 1 1;
+			flex: 1 1 1px;
+			width: 1px;
 			position: relative;
-			text-transform: capitalize;
-			white-space: nowrap;
-			overflow-x: hidden;
-			text-overflow: ellipsis;
+			.text {
+				text-transform: capitalize;
+				white-space: nowrap;
+				overflow-x: hidden;
+				text-overflow: ellipsis;
+			}
 
 			.xp {
 				position: absolute;
